@@ -1,0 +1,80 @@
+1.字典 格式dict{}
+    增
+         .setdefault('键值','增加的值')  有返回值
+          .update() 更新 原有的key value会被覆盖
+
+    删
+        .clear()  清空字典
+        .pop()    删除对应的键值对  有返回值
+        del   删除整个字典
+
+
+
+    改
+        通过key值取出然后重新赋值
+
+
+
+
+
+    查
+        通过对应的key值去查询
+        .keys() 打印字典中所有的键值 拿出来的不是列表,而是dict_keys类型
+        .values() 拿出字典中所有的值,同上
+        .items() 打印字典中所有的keys和value
+
+    字典的嵌套:
+
+
+    字典的排序:
+            sorted(dict)  根据 键值 进行排序
+            sorted(dict.value()) 将键值进行排序
+
+    字典的遍历:
+            for i in dict   循环出来的打印出来的是键值
+                print(i, dict[i])  打印出来所有的键值对
+
+            for i,v in dict.items:
+                print(i,v)    效率不高
+
+2.字符串(string):
+    .join([需要拼接的字符串内容])
+    内置方法:
+           ##   .count 统计元素个数
+                .capitalize()  字符串首字母大写
+           ##   .cent()      字符串居中
+                .endswith   判断以什么结尾的
+           ##   .startswith 判断以什么开头的
+                .expandtabs(tabsize=数字)
+           ##   .find()  查找字符串中元素所在的第一个位置的索引值,没找到就会返回-1
+           ##   .format()   格式化输出的另外一种方式
+                .format_map({字典})
+                .index()  没找到会报错
+                .isalnum() 判断是否是字符串和数字的
+                .isdigit()  判断是否是一个整数 整形
+                .isdecimal() 判断是否是一个十进制的数
+                .isalpha()  判断是否是字母
+                .isnumeric() 判断是否是一个数字
+                .isidentifier() 判读是否非法字符
+           ##   .islower()  判断是否小写
+           ##   .isupper()  判断是否大写
+                .istitle()  判断是否首字母大写
+           #    .lower()    字符串全部小写
+           #    .upper()    字符串全部大写
+                .swapcase()  大写变小写 小写变大写
+                .ljust()
+                .rjust()
+          ###   .strip()  去掉左右的换行符
+                .lstrip 左边换行符
+                .rstrip  右边换行符
+          ##    .replace('替换的内容','被替换的内容',替换次数)
+                .rfind
+          ##    .split() 以什么为分隔符分割字符串成一个列表
+                .rsplit('分隔符',分割次数)
+          ##    .title() 首字母大写
+
+
+3.编码和解码:
+    in python2:
+        默认是ASCII码
+
